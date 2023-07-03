@@ -1,0 +1,13 @@
+server:
+  port: 8093
+spring:
+  application:
+    name: ribbon-service
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://nirvana:y1j2l3123321yjl@localhost:8090/eureka
+service-url:
+  user-service: http://user-service
